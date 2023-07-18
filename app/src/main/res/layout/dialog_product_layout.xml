@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:background="@color/back_color"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="PRODUCT DETAILS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Name"
+        android:outlineProvider="none"
+        android:paddingStart="5dp"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/border_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edProdTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Description"
+        android:paddingStart="5dp"
+        app:boxStrokeColor="@color/border_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edProdDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="88dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edittext_background"
+        android:hint="QTY."
+        android:paddingStart="5dp"
+        app:boxStrokeColor="@color/border_text"
+        app:layout_constraintEnd_toStartOf="@+id/textInputLayout4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Unit"
+        app:boxStrokeColor="@color/border_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edUnit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputCost"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Unit Cost"
+        app:boxStrokeColor="@color/border_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edUnitCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnAddUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/btn_inv_back"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputCost"
+        app:strokeColor="@color/border_text"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/btn_inv_back"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnAddUpdate"
+        app:layout_constraintTop_toBottomOf="@id/textInputCost"
+        app:strokeColor="@color/border_text"
+        app:strokeWidth="2dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image1"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp"
+    tools:context=".SignupActivity">
+
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/txtEmailAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <EditText
+        android:id="@+id/txtUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/baseline_account_circle_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="User name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailAdd" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUserName" />
+
+    <EditText
+        android:id="@+id/txtConfirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Signup"
+        android:textColor="@color/activity_label"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/border_text"
+        android:text="Register"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtConfirm"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btnCancelRegistration"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/btn_cancel"
+        android:text="Cancel Registration"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnRegister"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

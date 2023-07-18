@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SarisariStore" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.SarisariStore" parent="Base.Theme.SarisariStore" />
+    <style name="MyThemOverlay_Toolbar" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="colorPrimary">@color/border_text</item>
+    </style>
+    <style name="splashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

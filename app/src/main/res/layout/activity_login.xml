@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image1"
+    android:paddingStart="50dp"
+    android:paddingEnd="50dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="@color/activity_label"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/txtLoginUser"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/baseline_account_circle_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="User name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/txtLoginPassword"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLoginUser" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/border_text"
+        android:text="Login"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLoginPassword"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/btn_inv_back"
+        android:text="Not yet registered? SIGNUP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.755"
+        app:strokeColor="@color/border_text"
+        app:strokeWidth="2dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="178dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

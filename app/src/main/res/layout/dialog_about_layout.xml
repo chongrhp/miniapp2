@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/back_color"
+    android:paddingBottom="25dp">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:text="SARISARI STORE INVENTORY"
+        android:textAlignment="center"
+        android:textColor="@color/activity_label"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#679DC8"
+        android:text="Close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:strokeColor="@color/border_text"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="15dp"
+        android:text="Monitor stock movement at each stage by tracking the sari-sari store inventory journey from the shelf to the cart with the robust inventory management software."
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="SOFTWARE DEVELOPER"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:text="Managed Services Provider which provides scalable, economical and reliable options for effectively managing and supporting business applications and technology infrastructure."
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arizonia"
+        android:text="Chong2xrhpSoftware"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="128dp"
+        android:layout_height="87dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
